@@ -1,0 +1,24 @@
+/* src/index.css */
+
+/*
+  Esta diretiva injeta os estilos base do Tailwind.
+  Isso inclui um "reset" de CSS moderno (semelhante ao normalize.css) que 
+  garante que seu site seja renderizado de forma consistente em todos os navegadores, 
+  junto com quaisquer estilos de base definidos em sua configuração.
+*/
+@tailwind base;
+
+/*
+  Esta diretiva injeta as classes de componentes do Tailwind.
+  É aqui que classes pré-construídas e reutilizáveis (como botões ou formulários, se você os configurar)
+  são adicionadas. Também é onde você pode registrar seus próprios componentes personalizados.
+*/
+@tailwind components;
+
+/*
+  Esta é a diretiva mais importante.
+  Ela injeta todas as classes de utilitários do Tailwind (como flex, pt-4, text-center, etc.).
+  O Tailwind irá escanear todos os seus arquivos (HTML, JSX) e gerar APENAS as
+  classes que você está usando, tornando o arquivo final de CSS extremamente otimizado.
+*/
+@tailwind utilities;
